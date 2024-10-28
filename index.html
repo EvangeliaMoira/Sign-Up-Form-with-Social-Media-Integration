@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Template for Sign up</title>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="/submit-signup" method="POST"></form>
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <a href="/login" class="login-link">Already have an account? Log in</a>
+        <hr class="divider">
+            <div class="social-media">
+                <a href="/auth/google" class="social-btn google-btn">
+                    <i class="fab fa-google"></i> Sign up with Google
+                </a>
+            </div>
+            <div class="social-media">
+            <a href="/auth/linkedin" class="social-btn linkedin-btn">
+                <i class="fab fa-linkedin"></i> Sign up with LinkedIn
+            </a>
+            </div>
+        </form>
+        </div>
+    
+</body>
+</html>
